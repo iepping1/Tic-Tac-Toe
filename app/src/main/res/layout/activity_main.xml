@@ -3,14 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"/>
+
     <android.support.v7.widget.GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
         app:columnCount="3">
 
@@ -19,7 +29,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -27,7 +37,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -35,7 +45,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -43,7 +53,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -51,7 +61,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -59,7 +69,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -67,7 +77,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -75,7 +85,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
 
         <Button
@@ -83,7 +93,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="tileClicked"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_gravity="fill_horizontal" />
     </android.support.v7.widget.GridLayout>
 

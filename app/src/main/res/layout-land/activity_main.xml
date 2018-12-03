@@ -8,9 +8,11 @@
     tools:context=".MainActivity">
 
     <android.support.v7.widget.GridLayout
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_weight="1"
         app:columnCount="3">
 
@@ -87,6 +89,13 @@
             app:layout_gravity="fill_horizontal" />
     </android.support.v7.widget.GridLayout>
 
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:textSize="30sp" />
+
     <Button
         android:id="@+id/button10"
         android:layout_width="100dp"
@@ -94,4 +103,5 @@
         android:layout_gravity="center"
         android:onClick="resetClicked"
         android:text="NEW GAME" />
+
 </LinearLayout>
