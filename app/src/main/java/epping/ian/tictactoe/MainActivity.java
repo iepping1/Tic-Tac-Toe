@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             column = 2;
         }
 
-        // possible game states
+        // possible game moves
         Tile tile = game.draw(row, column);
         Button button= findViewById(id);
 
@@ -84,22 +84,20 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        // check for game end
-        GameState gameState = game.ended();
+        // possible end states
+        GameState gameState = game.won();
+        TextView Winner = findViewById(R.id.message);
 
+        // check winner
         switch(gameState) {
-
             case PLAYER_ONE:
-                TextView OneWon = findViewById(R.id.message);
-                OneWon.setText("Player 1 Won!");
+                Winner.setText("Player 1 Won!");
                 break;
             case PLAYER_TWO:
-                TextView TwoWon = findViewById(R.id.message);
-                TwoWon.setText("Player 2 Won!");
+                Winner.setText("Player 2 Won!");
                 break;
             case DRAW:
-                TextView draw = findViewById(R.id.message);
-                draw.setText("It's a Tie!");
+                Winner.setText("It's a Tie!");
                 break;
         }
     }
